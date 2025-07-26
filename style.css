@@ -1,254 +1,253 @@
-:root {
-    --primary-color: #2E8B57; /* Verde Mar */
-    --secondary-color: #F0FFF0; /* Verde Menta (muito claro) */
-    --text-color: #333;
-    --background-color: #FFFFFF;
-    --font-family: 'Arial', sans-serif;
-}
-
-/* Reset Básico */
-* {
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: var(--font-family);
+    background-color: #f4f4f4; /* Cor de fundo clarinha */
+    color: #333;
     line-height: 1.6;
-    background-color: var(--background-color);
-    color: var(--text-color);
 }
 
 .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Header e Navegação */
-header {
-    background-color: var(--background-color);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-}
-
-.logo {
-    height: 60px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: bold;
-    font-size: 16px;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #20603D; /* Verde mais escuro */
-}
-
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: var(--primary-color);
-    margin: 4px 0;
-    transition: 0.4s;
-}
-
-/* Seção Hero */
-#hero {
-    /* CORRIGIDO: Caminho da imagem de fundo alterado para um arquivo existente */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagens/nutricao.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-}
-
-#hero h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-#hero p {
-    font-size: 22px;
-}
-
-/* Seções Gerais */
-section {
-    padding: 80px 0;
-}
-
-section:nth-of-type(odd) {
-    background-color: var(--secondary-color);
-}
-
-section h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 36px;
-    color: var(--primary-color);
-}
-
-/* Dicas */
-.dicas-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.dica-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.dica-card:hover {
-    transform: translateY(-10px);
-}
-
-.dica-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.dica-card h3 {
-    margin: 20px 0 10px;
-    color: var(--primary-color);
-}
-
-.dica-card p {
-    padding: 0 20px 20px;
-}
-
-/* Contato */
-#contato form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-#contato label {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-#contato input,
-#contato textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: var(--font-family);
-    font-size: 16px;
-}
-
-#contato button {
-    padding: 12px;
-    background-color: var(--primary-color);
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s;
-}
-
-#contato button:hover {
-    background-color: #20603D;
-}
-
-/* Footer */
-footer {
-    background-color: var(--primary-color);
-    color: #fff;
-    text-align: center;
+    width: 80%;
+    max-width: 960px; /* Limita a largura para não ficar muito esticado em telas grandes */
+    margin: auto; /* Centraliza o conteúdo */
+    overflow: hidden; /* Limpa floats */
     padding: 20px 0;
 }
 
-/* CORRIGIDO: Adicionada estilização de foco para acessibilidade */
-:focus-visible {
-    outline: 3px solid #20603D;
-    outline-offset: 3px;
-    border-radius: 4px;
+/* Header (Cabeçalho) */
+header {
+    background-color: #28a745; /* Verde ODS 3 - Saúde */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
+header h1 {
+    margin: 0;
+    padding-bottom: 5px;
+}
 
-/* Responsividade */
+header p {
+    margin: 0 0 10px 0;
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none; /* Remove bolinhas da lista */
+}
+
+header nav ul li {
+    display: inline; /* Coloca os itens do menu um ao lado do outro */
+    padding: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilos para a nova seção de Navegação Visual com Ícones */
+.visual-navigation-section {
+    background-color: #ffffff; /* Fundo BRANCO para a seção de ícones */
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0; /* Linha divisória suave */
+}
+
+.visual-navigation-section .container {
+    display: flex; /* Para alinhar os ícones lado a lado */
+    justify-content: space-around; /* Distribui o espaço entre os ícones */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os ícones quebrem a linha em telas menores */
+}
+
+.nav-icon-item {
+    display: flex;
+    flex-direction: column; /* Ícone em cima, texto embaixo */
+    align-items: center;
+    text-decoration: none;
+    color: #333; /* Cor do texto padrão */
+    margin: 15px; /* Espaçamento entre os itens */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave */
+    padding: 20px 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Sombra mais suave e evidente */
+    min-width: 120px; /* Largura mínima para o box do ícone */
+    border: 1px solid #f0f0f0;
+}
+
+.nav-icon-item:hover {
+    transform: translateY(-5px); /* Efeito de "subir" ao passar o mouse */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12); /* Sombra mais forte */
+}
+
+.nav-icon-item .icon {
+    font-size: 2.5em; /* Tamanho do emoji/ícone */
+    margin-bottom: 10px;
+    width: 60px; /* Tamanho fixo para o círculo */
+    height: 60px;
+    border-radius: 50%; /* Faz o ícone ser um círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Cor do emoji dentro do círculo */
+}
+
+.nav-icon-item span {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #555; /* Cor do texto do item */
+}
+
+/* Cores específicas para cada ícone (baseado na imagem ou ODS) */
+.saber-icon {
+    background-color: #f77f00; /* Laranja/Vermelho para "Saber" */
+}
+
+.saude-icon {
+    background-color: #e53935; /* Vermelho para "Saúde" (Coração) */
+}
+
+.sua-voz-icon {
+    background-color: #007bff; /* Azul para "Sua Voz" (Comunicação) */
+}
+
+/* Seções de Conteúdo */
+.content-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Ajusta o fundo da seção Saúde */
+.light-bg {
+    background-color: #f7f9fc; /* Fundo azul BEM claro para seções alternadas */
+}
+
+.content-section h2 {
+    color: #333; /* Cor mais neutra para o título */
+    margin-bottom: 10px;
+}
+
+.content-section > .container > p {
+    max-width: 700px;
+    margin: 0 auto 30px auto; /* Aumenta a margem inferior */
+    color: #666;
+}
+
+.link-category {
+    background-color: #fff; /* Fundo branco para o card */
+    padding: 25px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07); /* Sombra suave para o card */
+    border: 1px solid #e9ecef;
+    max-width: 700px;
+    text-align: left; /* Alinha o texto das categorias à esquerda */
+}
+
+.link-category h3 {
+    color: #333;
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.link-category ul {
+    list-style: none; /* Remove bolinhas da lista de links */
+    padding: 0;
+}
+
+/* ESTILOS PARA OS ITENS COM IMAGEM */
+.link-category ul li {
+    margin-bottom: 25px;
+}
+.link-category ul li:last-child {
+    margin-bottom: 0;
+}
+
+.link-item-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Aumenta o espaço entre a imagem e o texto */
+}
+
+.link-item-container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.link-text-content a {
+    color: #007bff; /* Cor dos links de conteúdo */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.link-text-content a:hover {
+    text-decoration: underline;
+}
+
+.link-description {
+    font-size: 0.95em;
+    color: #555;
+    margin-top: 5px;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* SEÇÃO SUA VOZ */
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer (Rodapé) */
+footer {
+    background-color: #343a40; /* Cinza escuro */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* Responsividade (para celulares) */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: flex;
+    .container {
+        width: 90%; /* Ocupa mais espaço em telas menores */
+    }
+
+    header nav ul li {
+        display: block; /* Itens do menu um abaixo do outro em telas pequenas */
+        padding: 5px 0;
     }
     
-    .nav-links {
-        display: none;
+    .link-item-container {
+        /* Em telas menores, a imagem pode ir para cima do texto */
         flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        background-color: var(--background-color);
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        text-align: center;
-        margin: 0;
-    }
-
-    .nav-links a {
-        padding: 15px;
-        display: block;
-        width: 100%;
-    }
-
-    #hero h1 {
-        font-size: 36px;
-    }
-    
-    #hero p {
-        font-size: 18px;
+        align-items: flex-start; /* Alinha à esquerda no mobile */
+        text-align: left;
     }
 }
