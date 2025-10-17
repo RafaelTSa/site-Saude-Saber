@@ -1,6 +1,5 @@
 # 🧠 Saúde & Saber Conectado: Hub Digital de ODS 3 & 4
 
-![Banner simples que combine com o tema, ou a imagem das engrenagens. Se for usar uma imagem, coloque o link dela aqui]
 
 ## 🎯 Visão Geral do Projeto
 
