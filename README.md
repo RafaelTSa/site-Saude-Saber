@@ -3,7 +3,7 @@
 
 ## 🎯 Visão Geral do Projeto
 
-Este projeto é uma **iniciativa de extensão universitária** desenvolvida por [Seu Nome] - estudante de Ciência da Computação - com o objetivo de gerar impacto social positivo na comunidade, atuando diretamente em dois Objetivos de Desenvolvimento Sustentável da ONU:
+Este projeto é uma **iniciativa de extensão universitária** desenvolvida por Rafael - estudante de Ciência da Computação - com o objetivo de gerar impacto social positivo na comunidade, atuando diretamente em dois Objetivos de Desenvolvimento Sustentável da ONU:
 
 * **ODS 3: Saúde e Bem-Estar:** Promover a saúde mental, hábitos saudáveis e bem-estar.
 * **ODS 4: Educação de Qualidade:** Garantir o acesso a recursos digitais relevantes e de alta qualidade.
